@@ -1,0 +1,90 @@
+body {
+  font-family: "Poppins";
+}
+
+.header {
+  color: white;
+  background-color: rgb(75, 75, 75);
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  margin: auto;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 85%;
+  }
+}
+
+.insert-form,
+.search-form,
+.unread-list,
+.read-list,
+.book-item {
+  border: 0.5px solid rgb(126, 126, 126);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.form-control {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.input-text {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.btn {
+  color: white;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn-main {
+  background-color: rgb(75, 75, 75);
+  width: 100%;
+}
+
+.btn-delete {
+  background-color: rgb(204, 0, 0);
+}
+
+.btn-orange {
+  background-color: rgb(235, 152, 0);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "label input input input input input input button button button button";
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.item1 {
+  grid-area: label;
+}
+.item2 {
+  grid-area: input;
+}
+.item3 {
+  grid-area: button;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bookshelf Apps</h1>
+    </div>
+    <div class="content">
+      <div class="insert-form">
+        <h3>Masukkan Buku Baru</h3>
+        <form>
+          <div class="form-control">
+            <label for="title">Judul</label>
+            <input
+              id="title"
+              type="text"
+              class="input-text width-100"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="title">Penulis</label>
+            <input
+              id="author"
+              type="text"
+              class="input-text width-100"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="title">Tahun</label>
+            <input
+              id="year"
+              type="text"
+              class="input-text width-100"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="title">Selesai Dibaca</label>
+            <input id="isCompleted" type="checkbox" />
+          </div>
+          <br />
+          <button id="insert-button" class="btn btn-main">Masukkan Buku</button>
+        </form>
+      </div>
+      <div class="search-form">
+        <h3>Cari Buku</h3>
+        <div class="form-control grid-container">
+          <label for="title" class="item1">Judul</label>
+          <input type="text" class="input-text item2" />
+          <button class="btn btn-main item3">Cari</button>
+        </div>
+      </div>
+      <div id="unread-list" class="unread-list">
+        <h3>Belum Selesai Dibaca</h3>
+      </div>
+      <div id="read-list" class="read-list">
+        <h3>Selesai Dibaca</h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
